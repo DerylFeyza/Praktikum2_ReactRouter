@@ -1,9 +1,10 @@
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useLocation } from "react-router-dom";
 
 const navigation = [
-	{ name: "Home", href: "/", current: true },
+	{ name: "Home", href: "/", current: false },
 	{ name: "Gallery", href: "/gallery", current: false },
 	{ name: "Events", href: "/events", current: false },
 ];
@@ -13,6 +14,12 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+	const location = useLocation();
+
+	navigation.forEach((item) => {
+		item.current = item.href === location.pathname;
+	});
+
 	return (
 		<Disclosure as="nav" className="bg-gray-800">
 			{({ open }) => (
