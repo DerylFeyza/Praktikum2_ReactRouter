@@ -16,12 +16,9 @@ export default function Beranda() {
 						Adiwiyata
 					</h2>
 					<p className="mt-6 text-lg leading-8 text-white">
-						Adiwiyata, secara internasional disebut pula dengan Green School
-						adalah salah satu program Kementerian Lingkungan Hidup dalam rangka
-						mendorong terciptanya pengetahuan dan kesadaran warga sekolah dalam
-						upaya pelestarian lingkungan hidup. Diharapkan setiap warga sekolah
-						ikut terlibat dalam kegiatan sekolah menuju lingkungan yang sehat
-						dan menghindari dampak lingkungan yang negatif.
+						Adiwiyata is one of the key programs of the Ministry of Environment
+						aimed at promoting knowledge and awareness about environmental
+						conservation efforts among the student community in Indonesia.
 					</p>
 				</div>
 			</div>
