@@ -10,8 +10,8 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route exact path="/" element={<Beranda />} />
-				<Route path="/galeri" element={<Galeri />} />
-				<Route path="/haribesar" element={<HariBesar />} />
+				<Route path="/gallery" element={<Galeri />} />
+				<Route path="/events" element={<HariBesar />} />
 			</Routes>
 		</BrowserRouter>
 	);
