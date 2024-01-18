@@ -61,7 +61,7 @@ export default function HariBesar() {
 	return (
 		<ul role="list" className="divide-y divide-gray-100 mx-40">
 			{bigdays.map((days) => (
-				<li key={days.id} className="flex justify-between gap-x-6 py-5">
+				<li key={days.name} className="flex justify-between gap-x-6 py-5">
 					<div className="flex min-w-0 gap-x-4">
 						<div className="min-w-0 flex-auto">
 							<p className="text-sm font-semibold leading-6 text-gray-900">
